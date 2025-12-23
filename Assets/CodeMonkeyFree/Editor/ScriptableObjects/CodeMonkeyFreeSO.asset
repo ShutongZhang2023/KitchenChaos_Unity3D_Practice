@@ -18,7 +18,7 @@ MonoBehaviour:
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1766514505
+  checkedLastUpdateTimestamp: 1766523267
   lastQOTDResponse:
     questionId: 254
     questionText: 'Is there a problem with this code?
@@ -33,18 +33,18 @@ MonoBehaviour:
     answerC: 'Should be: SetCameraFollowFunc((Vector3(1, 0, 0)) =&#62; { });'
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1766514505
+  lastQotdTimestamp: 1766523267
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/problemSolvingCourse_BonusesEndingMonth.png
     topText: The Special Bonuses on my Problem Solving course are ending this month!
     topLink: problemsolvingcourse
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1766514505
+  lastDynamicHeaderTimestamp: 1766523267
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1766514505
+  websiteLatestMessageTimestamp: 1766523267
   websiteLatestVideos:
     videos:
     - youTubeId: zk3vMm0dJ_M
@@ -55,4 +55,4 @@ MonoBehaviour:
       title: THIS is the #1 Game Marketing RULE!
     - youTubeId: CGQovJjijwE
       title: FREE DOWNLOAD 56 Project Files!
-  websiteLatestVideosTimestamp: 1766514505
+  websiteLatestVideosTimestamp: 1766523267
