@@ -1,15 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using System;
 
 public class GameInput : MonoBehaviour
 {
     private PlayerInputAction playerInputAction;
+    public event EventHandler OnInteractAction;
+
     private void Awake()
     {
         playerInputAction = new PlayerInputAction();
         playerInputAction.Player.Enable();
+
+        playerInputAction.Player.Interact.performed += Interact_performed;
+    }
+    private void Interact_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        OnInteractAction?.Invoke(this, EventArgs.Empty);
     }
     public Vector2 GetMovementVectorNormalized() {
         //input vector separate with movement (easy to refactor and the input system unity have)
