@@ -1060,6 +1060,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClearCounter
       objectReference: {fileID: 0}
+    - target: {fileID: 7178100122857662660, guid: bad28fa33657a5349babcad8cfa1945f,
+        type: 3}
+      propertyPath: TomatoPrefab
+      value: 
+      objectReference: {fileID: 5645638509969415429, guid: bb217383285e7de4d96696adebcd0284,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
