@@ -10,6 +10,7 @@ public class GameInput : MonoBehaviour
 {
     private PlayerInputAction playerInputAction;
     public event EventHandler OnInteractAction;
+    public event EventHandler OnInteractAlternateAction;
 
     private void Awake()
     {
@@ -17,11 +18,18 @@ public class GameInput : MonoBehaviour
         playerInputAction.Player.Enable();
 
         playerInputAction.Player.Interact.performed += Interact_performed;
+        playerInputAction.Player.InteractAlternate.performed += InteractAlternate_performed;
     }
     private void Interact_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
         OnInteractAction?.Invoke(this, EventArgs.Empty);
     }
+
+    private void InteractAlternate_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+         OnInteractAlternateAction?.Invoke(this, EventArgs.Empty);
+    }   
+
     public Vector2 GetMovementVectorNormalized() {
         //input vector separate with movement (easy to refactor and the input system unity have)
         Vector2 inputVector = playerInputAction.Player.Move.ReadValue<Vector2>();
